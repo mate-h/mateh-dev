@@ -9,7 +9,7 @@ const app = opine(); // opine is express ported to deno
 // setup tRPC router
 const appRouter = trpc.router().query("hw", {
   resolve() {
-    const data = { hello: "world" };
+    const data = { hello: "world hello" };
     return data;
   },
 });
